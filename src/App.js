@@ -7,6 +7,7 @@ function App() {
 
  const [data, setData] = useState({});
   const [query , setQuery] = useState('');
+  const [modal, setModal] = useState(false);
 
   useEffect(() => {
 
@@ -26,6 +27,8 @@ function App() {
         
         <ShowData data={data} />
        </div> }
+
+       
 
     </div>
   );

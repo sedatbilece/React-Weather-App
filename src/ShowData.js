@@ -11,6 +11,11 @@ export default function ShowData({data}){
         <div><h1> {data.current.temp_c}°C</h1></div>
         </div>
 
+        <div className='ShowData-middle2'>
+            <div>{data.current.condition.text}</div>
+            <div><img src={data.current.condition.icon} alt="text"></img>   </div>
+        </div>
+
         <div className='ShowData-bottom'>
 
             <div> <h3>feelslike</h3> {data.current.feelslike_c}°C </div>
