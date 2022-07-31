@@ -19,7 +19,7 @@ function App() {
     <div className='App'>
      
      <div className='search'>
-      <Search setData={setData} query={query} setQuery={setQuery}  />
+      <Search setData={setData} query={query} setQuery={setQuery} setModal={setModal}  />
      </div>
        
 
@@ -28,7 +28,9 @@ function App() {
         <ShowData data={data} />
        </div> }
 
-       
+       {modal && <div className='modal'>
+       The city you searched for was not found ! [:'(]
+        </div>}
 
     </div>
   );

@@ -1,16 +1,19 @@
 
-function Search ({setData,setQuery,query}){
+function Search ({setData,setQuery,query,setModal}){
 
     const getData = () =>{
     
         fetch(`http://api.weatherapi.com/v1/current.json?key=9ae7eb8da3f34ae3a71130750223107&q=${query}&aqi=no`)
         .then(res => {
           if(res.ok && res.status === 200){
+            setModal(false);
             return res.json();
+
           }
           else{
+            setModal(true);
             throw new Error('Something went wrong');
-            //hata modal vs tetikeleme
+            
           }
         })
         .then(data => setData(data));

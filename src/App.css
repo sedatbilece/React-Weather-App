@@ -38,7 +38,6 @@
 }
 body{
     background-image: url('./img/cloud.jpg');
-    
     color:white
     
 }
@@ -49,12 +48,18 @@ body{
     background-color: #ffffff3d;
     color:white
 }
+.Search::placeholder{
+    color:white;
+    opacity: 0.7;
+}
 .Ara{
     margin-left: 20px;
+    border-radius: 10px;
+    border: none;
 }
 .img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     opacity: 0.5;
    
 }
@@ -63,3 +68,29 @@ body{
     justify-content: center;
     align-items: center;
 }
+.modal{
+    position: fixed;
+    top: 40vh;
+    left: 40vh;
+    width:300px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+@media only screen and (max-width: 800px) {
+    .modal{
+        position: fixed;
+        top: 40vh;
+        left: 5vh;
+        width:300px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        padding: 20px;
+    
+    }
+  }
