@@ -1,0 +1,54 @@
+.ShowData-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.ShowData-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.ShowData{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+   
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+body{
+    background-image: url('./img/cloud.jpg');
+    background-size: cover;
+    color:white
+    
+}
+.Search{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff3d;
+    color:white
+}
+.Ara{
+    margin-left: 20px;
+}
+.img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+   
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
